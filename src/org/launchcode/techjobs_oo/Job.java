@@ -19,7 +19,8 @@ public class Job {
     // DONE WITH TO-DO
 
     public Job (){
-        this.id = id;
+        this.id = nextId;
+        nextId++;
     }
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency){
