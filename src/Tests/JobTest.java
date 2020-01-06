@@ -6,14 +6,11 @@ import org.junit.Test;
 import org.launchcode.techjobs_oo.*;
 
 import static junit.framework.TestCase.assertEquals;
-import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertFalse;
 
 
 
 public class JobTest {
-    Job test_job1;
-    Job test_job2;
     Job job1;
     Job job2;
     Job job3;
@@ -31,10 +28,8 @@ public class JobTest {
 
     @Test
     public void testSettingJobId(){
-        test_job1 = new Job();
-        test_job2 = new Job();
+        Job test_job1 = new Job();
         assertEquals(1, test_job1.getId());
-        assertEquals(2, test_job2.getId());
     }
 
     @Test
